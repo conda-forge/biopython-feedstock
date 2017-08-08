@@ -19,12 +19,14 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.8.*  # [not (win and py36)]
+    - numpy 1.11.*  # [win and py36]
   run:
     - python
-    - numpy x.x
     - reportlab
     - mmtf-python
+    - numpy >=1.8  # [not (win and py36)]
+    - numpy >=1.11  # [win and py36]
 
 test:
   imports:
