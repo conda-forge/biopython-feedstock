@@ -31,6 +31,7 @@ requirements:
 test:
   imports:
     - Bio
+    - Bio.Affy
     - Bio.Align
     - Bio.Align.Applications
     - Bio.AlignIO
@@ -99,9 +100,12 @@ test:
     - Bio.Wise
     - Bio._py3k
     - Bio.codonalign
+    - Bio.cpairwise2
     - Bio.motifs
     - Bio.motifs.applications
     - Bio.motifs.jaspar
+    - Bio.phenotype
+    - Bio.trie
     - BioSQL
     
 about:
