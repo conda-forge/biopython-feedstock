@@ -12,23 +12,28 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.8.*  # [not (win and (py35 or py36))]
+    - numpy 1.9.*  # [win and py35]
+    - numpy 1.11.*  # [win and py36]
   run:
     - python
-    - numpy x.x
     - reportlab
     - mmtf-python
+    - numpy >=1.8  # [not (win and (py35 or py36))]
+    - numpy >=1.9  # [win and py35]
+    - numpy >=1.11  # [win and py36]
 
 test:
   imports:
     - Bio
+    - Bio.Affy
     - Bio.Align
     - Bio.Align.Applications
     - Bio.AlignIO
@@ -36,6 +41,7 @@ test:
     - Bio.Application
     - Bio.Blast
     - Bio.CAPS
+    - Bio.Cluster
     - Bio.Compass
     - Bio.Crystal
     - Bio.Data
@@ -53,6 +59,7 @@ test:
     - Bio.Graphics
     - Bio.Graphics.GenomeDiagram
     - Bio.HMM
+    - Bio.KDTree
     - Bio.KEGG
     - Bio.KEGG.Compound
     - Bio.KEGG.Enzyme
@@ -95,9 +102,12 @@ test:
     - Bio.Wise
     - Bio._py3k
     - Bio.codonalign
+    - Bio.cpairwise2
     - Bio.motifs
     - Bio.motifs.applications
     - Bio.motifs.jaspar
+    - Bio.phenotype
+    - Bio.trie
     - BioSQL
     
 about:
