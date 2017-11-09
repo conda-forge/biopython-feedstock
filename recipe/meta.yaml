@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -24,8 +24,6 @@ requirements:
     - numpy 1.11.*  # [win and py36]
   run:
     - python
-    - reportlab
-    - mmtf-python
     - numpy >=1.8  # [not (win and (py35 or py36))]
     - numpy >=1.9  # [win and py35]
     - numpy >=1.11  # [win and py36]
@@ -56,8 +54,9 @@ test:
     - Bio.GA.Selection
     - Bio.GenBank
     - Bio.Geo
-    - Bio.Graphics
-    - Bio.Graphics.GenomeDiagram
+    #Requires soft dependency reportlab
+    #- Bio.Graphics
+    #- Bio.Graphics.GenomeDiagram
     - Bio.HMM
     - Bio.KDTree
     - Bio.KEGG
@@ -73,7 +72,8 @@ test:
     - Bio.Nexus
     - Bio.PDB
     - Bio.PDB.QCPSuperimposer
-    - Bio.PDB.mmtf
+    #Requires soft dependency mmtf-python
+    #- Bio.PDB.mmtf
     - Bio.Pathway
     - Bio.Pathway.Rep
     - Bio.Phylo
