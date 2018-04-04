@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.70" %}
-{% set sha256 = "4a7c5298f03d1a45523f32bae1fffcff323ea9dce007fb1241af092f5ab2e45b" %}
+{% set version = "1.71" %}
+{% set sha256 = "4f1770a29a5b18fcaca759bbc888083cdde2b301f073439ff640570d4a93e033" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
