@@ -1,7 +1,7 @@
 About biopython
 ===============
 
-Home: http://github.com/biopython/biopython
+Home: http://biopython.org
 
 Package license: Biopython License Agreement
 
@@ -9,7 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Collection of freely available tools for computational molecular biology
 
-biopython is a collection of freely available Python tools for
+Biopython is a collection of freely available Python tools for
 computational molecular biology
 
 

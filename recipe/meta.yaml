@@ -111,13 +111,13 @@ test:
     - BioSQL
     
 about:
-  home: http://github.com/biopython/biopython
+  home: http://biopython.org
   license: Biopython License Agreement
   license_file: LICENSE.rst
   summary: 'Collection of freely available tools for computational molecular biology'
 
   description: |
-    biopython is a collection of freely available Python tools for
+    Biopython is a collection of freely available Python tools for
     computational molecular biology
   doc_url: http://biopython.org
   dev_url: https://github.com/biopython/biopython
