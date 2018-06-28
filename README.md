@@ -16,14 +16,16 @@ computational molecular biology
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/biopython-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/biopython-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/biopython-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/biopython-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/biopython-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/biopython-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/biopython-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/biopython-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/biopython-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/biopython-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/biopython-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/biopython-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/biopython/badges/version.svg)](https://anaconda.org/conda-forge/biopython)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/biopython/badges/downloads.svg)](https://anaconda.org/conda-forge/biopython)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-biopython-green.svg)](https://anaconda.org/conda-forge/biopython) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/biopython.svg)](https://anaconda.org/conda-forge/biopython) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/biopython.svg)](https://anaconda.org/conda-forge/biopython) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/biopython.svg)](https://anaconda.org/conda-forge/biopython) |
 
 Installing biopython
 ====================
