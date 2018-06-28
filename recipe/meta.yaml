@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.71" %}
-{% set sha256 = "4f1770a29a5b18fcaca759bbc888083cdde2b301f073439ff640570d4a93e033" %}
+{% set version = "1.72" %}
+{% set sha256 = "ab6b492443adb90c66267b3d24d602ae69a93c68f4b9f135ba01cb06d36ce5a2" %}
 
 package:
   name: {{ name|lower }}
