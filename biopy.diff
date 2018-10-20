@@ -1,0 +1,26 @@
+diff --git a/recipe/meta.yaml b/recipe/meta.yaml
+index ae93d9d..b20a32e 100644
+--- a/recipe/meta.yaml
++++ b/recipe/meta.yaml
+@@ -12,16 +12,15 @@ source:
+   sha256: {{ sha256 }}
+ 
+ build:
+-  number: 0
+-  script: python setup.py install --single-version-externally-managed --record record.txt
++  number: 1000
++  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+ 
+ requirements:
+   build:
++    - {{ compiler('c') }}
++  host:
+     - python
+-    - setuptools
+-    - numpy 1.8.*  # [not (win and (py35 or py36))]
+-    - numpy 1.9.*  # [win and py35]
+-    - numpy 1.11.*  # [win and py36]
++    - pip
+   run:
+     - python
+     - numpy >=1.8  # [not (win and (py35 or py36))]

@@ -13,20 +13,19 @@ source:
 
 build:
   number: 1000
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - setuptools
-    - numpy 1.8.*  # [not (win and (py35 or py36))]
-    - numpy 1.9.*  # [win and py35]
-    - numpy 1.11.*  # [win and py36]
+    - pip
   run:
     - python
-    - numpy >=1.8  # [not (win and (py35 or py36))]
+    - numpy >=1.8  # [not (win and (py35 or py36 or py37))]
     - numpy >=1.9  # [win and py35]
-    - numpy >=1.11  # [win and py36]
+    - numpy >=1.11  # [win and py36 or py37]
 
 test:
   imports:
