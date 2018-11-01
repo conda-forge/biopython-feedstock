@@ -112,7 +112,6 @@ about:
   license: Biopython License Agreement
   license_file: LICENSE.rst
   summary: 'Collection of freely available tools for computational molecular biology'
-
   description: |
     Biopython is a collection of freely available Python tools for
     computational molecular biology
