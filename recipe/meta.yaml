@@ -44,11 +44,6 @@ test:
     - Bio.Entrez
     - Bio.ExPASy
     - Bio.FSSP
-    - Bio.GA
-    - Bio.GA.Crossover
-    - Bio.GA.Mutation
-    - Bio.GA.Repair
-    - Bio.GA.Selection
     - Bio.GenBank
     - Bio.Geo
     #Requires soft dependency reportlab
@@ -63,9 +58,6 @@ test:
     - Bio.KEGG.Map
     - Bio.Medline
     - Bio.NMR
-    - Bio.NeuralNetwork
-    - Bio.NeuralNetwork.BackPropagation
-    - Bio.NeuralNetwork.Gene
     - Bio.Nexus
     - Bio.PDB
     - Bio.PDB.QCPSuperimposer
