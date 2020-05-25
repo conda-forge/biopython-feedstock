@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.76" %}
-{% set sha256 = "3873cb98dad5e28d5e3f2215a012565345a398d3d2c4eebf7cd701757b828c72" %}
+{% set version = "1.77" %}
+{% set sha256 = "fb1936e9ca9e7af8de1050e84375f23328e04b801063edf0ad73733494d8ec42" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   build:
@@ -98,12 +98,12 @@ test:
     - Bio.phenotype
     - Bio.trie
     - BioSQL
-    
+
 about:
   home: http://biopython.org
   license: Biopython License Agreement
   license_file: LICENSE.rst
-  summary: 'Collection of freely available tools for computational molecular biology'
+  summary: Collection of freely available tools for computational molecular biology
   description: |
     Biopython is a collection of freely available Python tools for
     computational molecular biology
