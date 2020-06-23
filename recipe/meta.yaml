@@ -88,7 +88,6 @@ test:
     - Bio.UniGene
     - Bio.UniProt
     - Bio.Wise
-    - Bio._py3k
     - Bio.codonalign
     - Bio.cpairwise2
     - Bio.motifs
