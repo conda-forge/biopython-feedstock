@@ -94,7 +94,6 @@ test:
     - Bio.motifs.applications
     - Bio.motifs.jaspar
     - Bio.phenotype
-    - Bio.trie
     - BioSQL
 
 about:
