@@ -32,7 +32,6 @@ test:
     - Bio.Align
     - Bio.Align.Applications
     - Bio.AlignIO
-    - Bio.Alphabet
     - Bio.Application
     - Bio.Blast
     - Bio.CAPS
