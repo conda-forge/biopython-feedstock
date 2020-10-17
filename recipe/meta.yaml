@@ -97,7 +97,7 @@ test:
 
 about:
   home: http://biopython.org
-  license: Biopython License Agreement
+  license: LicenseRef-Biopython
   license_file: LICENSE.rst
   summary: Collection of freely available tools for computational molecular biology
   description: |
