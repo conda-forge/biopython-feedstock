@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - pip
   run:
     - python
-    - numpy
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
