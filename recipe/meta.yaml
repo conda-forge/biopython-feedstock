@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.78" %}
-{% set sha256 = "1ee0a0b6c2376680fea6642d5080baa419fd73df104a62d58a8baf7a8bbe4564" %}
+{% set version = "1.79" %}
+{% set sha256 = "edb07eac99d3b8abd7ba56ff4bedec9263f76dfc3c3f450e7d2e2bcdecf8559b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -39,12 +39,10 @@ test:
     - Bio.CAPS
     - Bio.Cluster
     - Bio.Compass
-    - Bio.Crystal
     - Bio.Data
     - Bio.Emboss
     - Bio.Entrez
     - Bio.ExPASy
-    - Bio.FSSP
     - Bio.GenBank
     - Bio.Geo
     #Requires soft dependency reportlab
@@ -82,7 +80,6 @@ test:
     - Bio.SeqUtils
     - Bio.Sequencing
     - Bio.Sequencing.Applications
-    - Bio.Statistics
     - Bio.SubsMat
     - Bio.SwissProt
     - Bio.TogoWS
