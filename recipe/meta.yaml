@@ -39,12 +39,10 @@ test:
     - Bio.CAPS
     - Bio.Cluster
     - Bio.Compass
-    - Bio.Crystal
     - Bio.Data
     - Bio.Emboss
     - Bio.Entrez
     - Bio.ExPASy
-    - Bio.FSSP
     - Bio.GenBank
     - Bio.Geo
     #Requires soft dependency reportlab
@@ -82,7 +80,6 @@ test:
     - Bio.SeqUtils
     - Bio.Sequencing
     - Bio.Sequencing.Applications
-    - Bio.Statistics
     - Bio.SubsMat
     - Bio.SwissProt
     - Bio.TogoWS
