@@ -20,7 +20,6 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
-    - {{ pin_compatible('numpy') }}
   host:
     - python
     - pip
@@ -81,7 +80,6 @@ test:
     - Bio.SeqUtils
     - Bio.Sequencing
     - Bio.Sequencing.Applications
-    - Bio.SubsMat
     - Bio.SwissProt
     - Bio.TogoWS
     - Bio.UniGene
