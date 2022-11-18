@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.79" %}
-{% set sha256 = "edb07eac99d3b8abd7ba56ff4bedec9263f76dfc3c3f450e7d2e2bcdecf8559b" %}
+{% set version = "1.80" %}
+{% set sha256 = "52805e9af88767e450e2df8113b5bc59e964e2e8a7bb803a83570bdbb51c0e43" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -80,7 +80,6 @@ test:
     - Bio.SeqUtils
     - Bio.Sequencing
     - Bio.Sequencing.Applications
-    - Bio.SubsMat
     - Bio.SwissProt
     - Bio.TogoWS
     - Bio.UniGene
