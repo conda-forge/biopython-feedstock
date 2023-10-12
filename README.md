@@ -411,6 +411,3 @@ Feedstock Maintainers
 * [@peterjc](https://github.com/peterjc/)
 * [@souravsingh](https://github.com/souravsingh/)
 
-
-<!-- dummy commit to enable rerendering -->
-
