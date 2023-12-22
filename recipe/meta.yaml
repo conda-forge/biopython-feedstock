@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.81" %}
-{% set sha256 = "2cf38112b6d8415ad39d6a611988cd11fb5f33eb09346666a87263beba9614e0" %}
+{% set version = "1.82" %}
+{% set sha256 = "a9b10d959ae88a9744a91c6ce3601f4c86e7ec41679bc93c29f679218f6167bb" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -58,7 +58,6 @@ test:
     - Bio.NMR
     - Bio.Nexus
     - Bio.PDB
-    - Bio.PDB.QCPSuperimposer
     #Requires soft dependency mmtf-python
     #- Bio.PDB.mmtf
     - Bio.Pathway
@@ -84,7 +83,6 @@ test:
     - Bio.TogoWS
     - Bio.UniGene
     - Bio.UniProt
-    - Bio.Wise
     - Bio.codonalign
     - Bio.cpairwise2
     - Bio.motifs
