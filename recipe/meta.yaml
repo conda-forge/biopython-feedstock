@@ -58,7 +58,6 @@ test:
     - Bio.NMR
     - Bio.Nexus
     - Bio.PDB
-    - Bio.PDB.QCPSuperimposer
     #Requires soft dependency mmtf-python
     #- Bio.PDB.mmtf
     - Bio.Pathway
