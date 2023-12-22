@@ -83,7 +83,6 @@ test:
     - Bio.TogoWS
     - Bio.UniGene
     - Bio.UniProt
-    - Bio.Wise
     - Bio.codonalign
     - Bio.cpairwise2
     - Bio.motifs
