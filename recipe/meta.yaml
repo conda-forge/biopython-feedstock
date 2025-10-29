@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.85" %}
-{% set sha256 = "5dafab74059de4e78f49f6b5684eddae6e7ce46f09cfa059c1d1339e8b1ea0a6" %}
+{% set version = "1.86" %}
+{% set sha256 = "93a50b586a4d2cec68ab2f99d03ef583c5761d8fba5535cb8e81da781d0d92ff" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py<39]
 
@@ -35,9 +35,8 @@ test:
     - Bio
     - Bio.Affy
     - Bio.Align
-    - Bio.Align.Applications
+    - Bio.Align.substitution_matrices._arraycore
     - Bio.AlignIO
-    - Bio.Application
     - Bio.Blast
     - Bio.CAPS
     - Bio.Cluster
@@ -66,7 +65,6 @@ test:
     - Bio.Pathway
     - Bio.Pathway.Rep
     - Bio.Phylo
-    - Bio.Phylo.Applications
     - Bio.Phylo.PAML
     - Bio.PopGen
     - Bio.PopGen.GenePop
@@ -81,7 +79,6 @@ test:
     - Bio.SeqIO
     - Bio.SeqUtils
     - Bio.Sequencing
-    - Bio.Sequencing.Applications
     - Bio.SwissProt
     - Bio.TogoWS
     - Bio.UniGene
@@ -89,7 +86,6 @@ test:
     - Bio.codonalign
     - Bio.cpairwise2
     - Bio.motifs
-    - Bio.motifs.applications
     - Bio.motifs.jaspar
     - Bio.phenotype
     - BioSQL
