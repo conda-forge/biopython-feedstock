@@ -35,7 +35,7 @@ test:
     - Bio
     - Bio.Affy
     - Bio.Align
-    - Bio.Align.Applications
+    - Bio.Align.substitution_matrices._arraycore
     - Bio.AlignIO
     - Bio.Application
     - Bio.Blast
