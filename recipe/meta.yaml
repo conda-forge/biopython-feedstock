@@ -37,7 +37,6 @@ test:
     - Bio.Align
     - Bio.Align.substitution_matrices._arraycore
     - Bio.AlignIO
-    - Bio.Application
     - Bio.Blast
     - Bio.CAPS
     - Bio.Cluster
