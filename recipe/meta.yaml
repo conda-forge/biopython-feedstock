@@ -65,7 +65,6 @@ test:
     - Bio.Pathway
     - Bio.Pathway.Rep
     - Bio.Phylo
-    - Bio.Phylo.Applications
     - Bio.Phylo.PAML
     - Bio.PopGen
     - Bio.PopGen.GenePop
@@ -80,7 +79,6 @@ test:
     - Bio.SeqIO
     - Bio.SeqUtils
     - Bio.Sequencing
-    - Bio.Sequencing.Applications
     - Bio.SwissProt
     - Bio.TogoWS
     - Bio.UniGene
@@ -88,7 +86,6 @@ test:
     - Bio.codonalign
     - Bio.cpairwise2
     - Bio.motifs
-    - Bio.motifs.applications
     - Bio.motifs.jaspar
     - Bio.phenotype
     - BioSQL
