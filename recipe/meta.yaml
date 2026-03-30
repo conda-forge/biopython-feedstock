@@ -1,6 +1,6 @@
 {% set name = "biopython" %}
-{% set version = "1.86" %}
-{% set sha256 = "93a50b586a4d2cec68ab2f99d03ef583c5761d8fba5535cb8e81da781d0d92ff" %}
+{% set version = "1.87" %}
+{% set sha256 = "8456c803459b679a9712422e5a7fd9809f2f089bf69bb085f3b077946ac9bdbf" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py<39]
 
